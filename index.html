@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Character set and link to external stylesheet -->
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- Title of the HTML page -->
+    <title>RPG - Dragon Repeller</title>
+  </head>
+  <body>
+    <!-- Container for the game content -->
+    <div id="game">
+      <!-- Player's stats section -->
+      <div id="stats">
+        <!-- Player's experience points -->
+        <span class="stat"
+          >XP: <strong><span id="xpText">0</span></strong></span
+        >
+        <!-- Player's health points -->
+        <span class="stat"
+          >Health: <strong><span id="healthText">100</span></strong></span
+        >
+        <!-- Player's gold count -->
+        <span class="stat"
+          >Gold: <strong><span id="goldText">50</span></strong></span
+        >
+      </div>
+      <!-- Control buttons section -->
+      <div id="controls">
+        <!-- Button to go to the store -->
+        <button id="button1">Go to store</button>
+        <!-- Button to go to the cave -->
+        <button id="button2">Go to cave</button>
+        <!-- Button to fight the dragon -->
+        <button id="button3">Fight dragon</button>
+      </div>
+      <!-- Monster's stats section -->
+      <div id="monsterStats">
+        <!-- Monster's name -->
+        <span class="stat"
+          >Monster Name: <strong><span id="monsterName"></span></strong
+        ></span>
+        <!-- Monster's health points -->
+        <span class="stat"
+          >Health: <strong><span id="monsterHealth"></span></strong
+        ></span>
+      </div>
+      <!-- Text area for game messages -->
+      <div id="text">
+        <!-- Welcome message and game instructions -->
+        Welcome to Dragon Repeller. You must defeat the dragon that is
+        preventing people from leaving the town. You are in the town square.
+        Where do you want to go? Use the buttons above.
+      </div>
+    </div>
+    <!-- Link to external JavaScript file -->
+    <script src="./script.js"></script>
+  </body>
+</html>
